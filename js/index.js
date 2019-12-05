@@ -44,16 +44,18 @@ logo.setAttribute('src', siteContent["nav"]["img-src"]);
 let myImg = document.getElementById("cta-img");
 myImg.setAttribute('src', siteContent["cta"]["img-src"]);
 
-let myService = document.querySelectorAll("a")[1].textContent = "Services";
-let myProduct = document.querySelectorAll("a")[2].textContent = "Product";
-let myVision = document.querySelectorAll("a")[3].textContent = "Vision";
-let myFeatures = document.querySelectorAll("a")[4].textContent = "Features";
-let myAbout = document.querySelectorAll("a")[5].textContent = "About";
-// let myContact = document.querySelectorAll("a")[6].textContent = "Contact";
+let myService = document.querySelector("a");
+myService.textContent = siteContent["nav"]["nav-item-1"];
+
 
 let heading = document.querySelector(".cta-text h1");
-heading.textContent = "DOM is Awesome";
+heading.textContent = siteContent["cta"]["h1"];
 
 let firstButton = document.querySelector(".cta-text button");
 firstButton.textContent = siteContent["cta"]["button"];
 
+let firstContent = document.querySelector(".top-content");
+firstContent = siteContent["main-content"]["features-h4"];
+
+let midImg = document.getElementById("middle-img");
+midImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
