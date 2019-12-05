@@ -44,40 +44,16 @@ logo.setAttribute('src', siteContent["nav"]["img-src"]);
 let myImg = document.getElementById("cta-img");
 myImg.setAttribute('src', siteContent["cta"]["img-src"]);
 
-let newNav = document.querySelector('nav');
-let link1 = document.createElement('a');
-link1.textContent = 'Services';
-newNav.appendChild(link1);
+let myService = document.querySelectorAll("a")[1].textContent = "Services";
+let myProduct = document.querySelectorAll("a")[2].textContent = "Product";
+let myVision = document.querySelectorAll("a")[3].textContent = "Vision";
+let myFeatures = document.querySelectorAll("a")[4].textContent = "Features";
+let myAbout = document.querySelectorAll("a")[5].textContent = "About";
+// let myContact = document.querySelectorAll("a")[6].textContent = "Contact";
 
-let newNav1 = document.querySelector('nav');
-let link2 = document.createElement('a');
-link2.textContent = 'Product';
-newNav.appendChild(link2);
+let heading = document.querySelector(".cta-text h1");
+heading.textContent = "DOM is Awesome";
 
-let newNav2 = document.querySelector('nav');
-let link3 = document.createElement('a');
-link3.textContent = 'Vision';
-newNav.appendChild(link3);
-
-let newNav3 = document.querySelector('nav');
-let link4 = document.createElement('a');
-link4.textContent = 'Features';
-newNav.appendChild(link4);
-
-let newNav4 = document.querySelector('nav');
-let link5 = document.createElement('a');
-link5.textContent = 'About';
-newNav.appendChild(link5);
-
-let newNav5 = document.querySelector('nav');
-let link6 = document.createElement('a');
-link6.textContent = 'Contact';
-newNav.appendChild(link6);
-
-
-
-
-
-
-
+let firstButton = document.querySelector(".cta-text button");
+firstButton.textContent = siteContent["cta"]["button"];
 
