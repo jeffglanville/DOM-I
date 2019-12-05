@@ -47,6 +47,8 @@ myImg.setAttribute('src', siteContent["cta"]["img-src"]);
 let myService = document.querySelector("a");
 myService.textContent = siteContent["nav"]["nav-item-1"];
 
+let myProduct = document.querySelector("a");
+myProduct.textContent = siteContent["nav"]["nav-item-2"];
 
 let heading = document.querySelector(".cta-text h1");
 heading.textContent = siteContent["cta"]["h1"];
