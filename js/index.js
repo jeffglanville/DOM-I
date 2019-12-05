@@ -56,6 +56,7 @@ navLinks.forEach(element => {
   element.style.color = 'green';
 })
 
+
 const link = document.createElement("a");
 link.textContent = "Facebook Clicker";
 const faceBookLink = document.querySelector("nav");
@@ -72,11 +73,13 @@ link1.style.color = "green";
 
 
 let heading = document.querySelector(".cta-text h1");
-heading.textContent = siteContent.cta.h1;
+siteContent.cta.h1 = "Dom <br> is <br> Awesome";
+heading.innerHTML = siteContent['cta']['h1'];
 
 heading.style.backgroundColor = "purple";
 heading.style.color = 'gold';
-heading.style.fontSize = "100px";
+heading.style.fontSize = "90px";
+heading.style.width = '100%'
 
 
 
